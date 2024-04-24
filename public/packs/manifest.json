@@ -1,0 +1,42 @@
+{
+  "application.js": "/packs/js/application.js",
+  "css/styles.css.map": "/packs/css/styles.css.map",
+  "css/vendors-node_modules_bootstrap-icons_font_bootstrap-icons_css.css": "/packs/css/vendors-node_modules_bootstrap-icons_font_bootstrap-icons_css.css",
+  "css/vendors-node_modules_bootstrap-icons_font_bootstrap-icons_css.css.map": "/packs/css/vendors-node_modules_bootstrap-icons_font_bootstrap-icons_css.css.map",
+  "entrypoints": {
+    "application": {
+      "assets": {
+        "js": [
+          "/packs/js/runtime.js",
+          "/packs/js/vendors-node_modules_rails_ujs_app_assets_javascripts_rails-ujs_esm_js-node_modules_bootstrap-8ab64b.js",
+          "/packs/js/application.js"
+        ]
+      }
+    },
+    "styles": {
+      "assets": {
+        "js": [
+          "/packs/js/runtime.js",
+          "/packs/js/styles.js"
+        ],
+        "css": [
+          "/packs/css/vendors-node_modules_bootstrap-icons_font_bootstrap-icons_css.css",
+          "/packs/css/styles.css"
+        ]
+      }
+    }
+  },
+  "js/application.js.map": "/packs/js/application.js.map",
+  "js/runtime.js.map": "/packs/js/runtime.js.map",
+  "js/styles.js.map": "/packs/js/styles.js.map",
+  "js/vendors-node_modules_rails_ujs_app_assets_javascripts_rails-ujs_esm_js-node_modules_bootstrap-8ab64b.js": "/packs/js/vendors-node_modules_rails_ujs_app_assets_javascripts_rails-ujs_esm_js-node_modules_bootstrap-8ab64b.js",
+  "js/vendors-node_modules_rails_ujs_app_assets_javascripts_rails-ujs_esm_js-node_modules_bootstrap-8ab64b.js.map": "/packs/js/vendors-node_modules_rails_ujs_app_assets_javascripts_rails-ujs_esm_js-node_modules_bootstrap-8ab64b.js.map",
+  "runtime.js": "/packs/js/runtime.js",
+  "static/images/logo.png": "/packs/static/images/logo-e354eeb1b79dfbb2ace8.png",
+  "static/images/mglogo.png": "/packs/static/images/mglogo-a2f022f4c391b4fd79e3.png",
+  "static/images/mglogofull.png": "/packs/static/images/mglogofull-6cd00553f6ca3e50d571.png",
+  "static/node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2?dd67030699838ea613ee6dbda90effa6": "/packs/static/node_modules/bootstrap-icons/font/fonts/bootstrap-icons-b7bcc075b395c14ce8c2.woff2?dd67030699838ea613ee6dbda90effa6",
+  "static/node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff?dd67030699838ea613ee6dbda90effa6": "/packs/static/node_modules/bootstrap-icons/font/fonts/bootstrap-icons-39795c0b4513de014cf8.woff?dd67030699838ea613ee6dbda90effa6",
+  "styles.css": "/packs/css/styles.css",
+  "styles.js": "/packs/js/styles.js"
+}

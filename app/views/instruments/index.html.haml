@@ -1,0 +1,17 @@
+.card
+  .card-header.d-flex.align-items-center
+    %span Listing Students: 
+    %span  (#{@instruments.size} total.)
+  
+  %table.table
+    %thead
+      %tr
+        %th Teacher Name
+        %th Student Name
+        %th Instrument
+    %tbody
+      - @instruments.each do |instrument|
+        %tr
+          %td= instrument.tutor.forename + " " + instrument.tutor.surname
+          %td= instrument.student.forename + " " + instrument.student.surname
+          %td= instrument.instrument

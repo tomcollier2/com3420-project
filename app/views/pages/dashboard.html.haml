@@ -1,0 +1,19 @@
+.card
+  .card-header.d-flex.align-items-center
+  - if student_signed_in?
+    %span Student Dashboard
+
+    %body
+      .btn-toolbar.float-end
+        = link_to 'View My Sessions', music_sessions_url, class: 'btn btn-outline-secondary btn-sm'
+
+  - elsif tutor_signed_in?
+    %span Tutor Dashboard
+
+    %body
+      .btn-toolbar.float-end
+        = link_to 'Tutor List', tutors_url, class: 'btn btn-outline-secondary btn-sm'
+        -if current_tutor.admin?
+          = link_to 'View All Students', students_url, class: 'btn btn-outline-secondary btn-sm'
+        = link_to 'View My Students', '/students?status=personal', class: 'btn btn-outline-secondary btn-sm'
+        = link_to 'View My Sessions', music_sessions_url, class: 'btn btn-outline-secondary btn-sm'

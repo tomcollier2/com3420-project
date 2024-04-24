@@ -1,0 +1,16 @@
+.row.justify-content-center
+  .col-sm-8.col-lg-6
+    .card
+      .card-header
+        Tutor details
+      .card-body
+        %dl.row.mb-0
+          %dt.col-md-3 Name:
+          %dd.col-md-9= @tutor.forename + " " + @tutor.surname
+          %dt.col-md-3 Email:
+          %dd.col-md-9= @tutor.email
+          %dt.col-md-3 Admin:
+          %dd.col-md-9= @tutor.admin ? 'Yes' : 'No'
+          
+      .card-footer.d-flex
+        = link_to 'Back', tutors_path, class: 'btn btn-link ms-auto'

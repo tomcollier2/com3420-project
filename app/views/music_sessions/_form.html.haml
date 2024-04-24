@@ -1,0 +1,11 @@
+-# frozen_string_literal: true
+= simple_form_for(@session) do |f|
+  .card-body
+    = f.input :title, wrapper_html: { class: 'mb-3' }
+    = f.input :description, wrapper_html: { class: 'mb-3' }
+    = f.datetime_local_field :due_date, wrapper_html: { class: 'mb-3' }
+  .card-footer.d-flex
+    %button.btn.btn-primary{ type: 'submit' }
+      Save
+    = link_to 'Back', music_sessions_path, class: 'btn btn-link ms-auto'
+    

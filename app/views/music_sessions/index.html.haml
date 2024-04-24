@@ -1,0 +1,50 @@
+.card
+  .card-header.d-flex.align-items-center
+    %span Listing Sessions: 
+    %span  (#{@sessions.size} total.)
+    - if tutor_signed_in?
+      = link_to 'New Session', new_music_session_path, class: 'btn btn-outline-secondary ms-auto'
+  - if tutor_signed_in?
+    %table.table
+      %thead
+        %tr
+          %th Session Title
+          %th Tutor Name
+          %th Due Date
+          %th No. Tasks
+          %th
+      %tbody
+        - @sessions.each do |session|
+          %tr
+            %td= session.title
+            %td= session.tutor.forename + " " + session.tutor.surname
+            %td= session.due_date
+            %td
+              - session_tasks = @tasks.where(music_session_id: session.id)
+              = session_tasks.size
+            %td
+              .btn-toolbar.float-end
+                = link_to 'Show', session, class: 'btn btn-outline-secondary btn-sm'
+                = link_to 'Modify', edit_music_session_path(session), class: 'btn btn-outline-secondary ms-1 btn-sm'
+                = link_to 'Delete', session , method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-outline-danger ms-1 btn-sm'
+  - elsif student_signed_in?
+    %table.table
+      %thead
+        %tr
+          %th Session Title
+          %th Tutor Name
+          %th Due Date
+          %th No. Tasks
+          %th
+      %tbody
+        - @sessions.each do |session|
+          %tr
+            %td= session.title
+            %td= session.tutor.forename + " " + session.tutor.surname
+            %td= session.due_date
+            %td
+              - session_tasks = @tasks.where(music_session_id: session.id)
+              = session_tasks.size
+            %td
+              .btn-toolbar.float-end
+                = link_to 'Start Session', '#', class: 'btn btn-outline-secondary btn-sm'

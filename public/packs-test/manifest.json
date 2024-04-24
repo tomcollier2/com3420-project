@@ -1,0 +1,42 @@
+{
+  "application.js": "/packs-test/js/application.js",
+  "css/styles.css.map": "/packs-test/css/styles.css.map",
+  "css/vendors-node_modules_bootstrap-icons_font_bootstrap-icons_css.css": "/packs-test/css/vendors-node_modules_bootstrap-icons_font_bootstrap-icons_css.css",
+  "css/vendors-node_modules_bootstrap-icons_font_bootstrap-icons_css.css.map": "/packs-test/css/vendors-node_modules_bootstrap-icons_font_bootstrap-icons_css.css.map",
+  "entrypoints": {
+    "application": {
+      "assets": {
+        "js": [
+          "/packs-test/js/runtime.js",
+          "/packs-test/js/vendors-node_modules_rails_ujs_app_assets_javascripts_rails-ujs_esm_js-node_modules_bootstrap-8ab64b.js",
+          "/packs-test/js/application.js"
+        ]
+      }
+    },
+    "styles": {
+      "assets": {
+        "js": [
+          "/packs-test/js/runtime.js",
+          "/packs-test/js/styles.js"
+        ],
+        "css": [
+          "/packs-test/css/vendors-node_modules_bootstrap-icons_font_bootstrap-icons_css.css",
+          "/packs-test/css/styles.css"
+        ]
+      }
+    }
+  },
+  "js/application.js.map": "/packs-test/js/application.js.map",
+  "js/runtime.js.map": "/packs-test/js/runtime.js.map",
+  "js/styles.js.map": "/packs-test/js/styles.js.map",
+  "js/vendors-node_modules_rails_ujs_app_assets_javascripts_rails-ujs_esm_js-node_modules_bootstrap-8ab64b.js": "/packs-test/js/vendors-node_modules_rails_ujs_app_assets_javascripts_rails-ujs_esm_js-node_modules_bootstrap-8ab64b.js",
+  "js/vendors-node_modules_rails_ujs_app_assets_javascripts_rails-ujs_esm_js-node_modules_bootstrap-8ab64b.js.map": "/packs-test/js/vendors-node_modules_rails_ujs_app_assets_javascripts_rails-ujs_esm_js-node_modules_bootstrap-8ab64b.js.map",
+  "runtime.js": "/packs-test/js/runtime.js",
+  "static/images/logo.png": "/packs-test/static/images/logo-e354eeb1b79dfbb2ace8.png",
+  "static/images/mglogo.png": "/packs-test/static/images/mglogo-a2f022f4c391b4fd79e3.png",
+  "static/images/mglogofull.png": "/packs-test/static/images/mglogofull-6cd00553f6ca3e50d571.png",
+  "static/node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2?dd67030699838ea613ee6dbda90effa6": "/packs-test/static/node_modules/bootstrap-icons/font/fonts/bootstrap-icons-b7bcc075b395c14ce8c2.woff2?dd67030699838ea613ee6dbda90effa6",
+  "static/node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff?dd67030699838ea613ee6dbda90effa6": "/packs-test/static/node_modules/bootstrap-icons/font/fonts/bootstrap-icons-39795c0b4513de014cf8.woff?dd67030699838ea613ee6dbda90effa6",
+  "styles.css": "/packs-test/css/styles.css",
+  "styles.js": "/packs-test/js/styles.js"
+}

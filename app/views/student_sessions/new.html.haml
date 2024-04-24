@@ -1,0 +1,15 @@
+.row.justify-content-center
+  .col-sm-8.col-lg-6
+    .card
+      .card-header Assign Students to Session
+      -# frozen_string_literal: true
+      - if @available_students == nil
+        All of your students are already added to this Session
+      - else
+        = simple_form_for [@music_session, @student_session] do |f|
+          = f.input :student_id, as: :check_boxes, collection: @available_students, label_method: :full_name, value_method: :id
+          = f.button :submit, 'Add Students'
+      
+      .card-footer.d-flex
+        = link_to 'Back', @music_session, class: 'btn btn-link ms-auto'
+

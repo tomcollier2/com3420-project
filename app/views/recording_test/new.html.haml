@@ -1,0 +1,9 @@
+!!! 5
+%html
+  %head
+    %title Testing Page
+    %script{src: "audio_recording_controller.js", defer: true}
+  %body
+    %input{id: "recordingDuration", type: "number", placeholder: "Recording Duration (seconds)"}
+    %button{"data-controller": "audio-recording", "data-action": "click->audio-recording#startRecordingWithDuration"} Start Recording
+    %audio#recordedAudio controls

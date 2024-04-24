@@ -1,0 +1,27 @@
+html {
+  min-height: 100%
+}
+
+body {
+  background-image: linear-gradient(0deg, #F365D5, #E1822F);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  footer {
+    margin-top: auto;
+  }
+}
+
+.navbar-brand img{
+  rotate: -90deg;
+  padding: 5px;
+  height: 60px;
+}
+.navbar{
+  align-items: space-between;
+}
+.navbar-nav{
+  align-items: end;
+
+}

@@ -1,0 +1,14 @@
+-# frozen_string_literal: true
+= simple_form_for(@tutor) do |f|
+  .card-body
+    = f.input :forename, wrapper_html: { class: 'mb-3' }
+    = f.input :surname, wrapper_html: { class: 'mb-3' }
+    = f.input :email, wrapper_html: { class: 'mb-3' }
+    = f.input :password, wrapper_html: { class: 'mb-3' }
+    = f.input :admin
+
+  .card-footer.d-flex
+    %button.btn.btn-primary{ type: 'submit' }
+      Save
+    = link_to 'Back', tutors_path, class: 'btn btn-link ms-auto'
+    

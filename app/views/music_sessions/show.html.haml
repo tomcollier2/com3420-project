@@ -1,0 +1,56 @@
+.row.justify-content-center
+  .col-sm-8.col-lg-6
+    .card
+      .card-header
+        Session details
+      .card-body
+        %dl.row.mb-0
+          %dt.col-md-3 Title:
+          %dd.col-md-9= @session.title
+          %dt.col-md-3 Description:
+          %dd.col-md-9= @session.description
+          %dt.col-md-3 Created By:
+          %dd.col-md-9= @session.tutor.forename + " " + @session.tutor.surname
+          %dt.col-md-3 Due Date:
+          %dd.col-md-9= @session.due_date
+
+        .card-header.d-flex.align-items-center
+          %span Listing Tasks: 
+          %span  (#{@tasks.size} total.)
+          = link_to 'New Task', new_music_session_task_path(@session), class: 'btn btn-outline-secondary ms-auto'
+
+        %table.table
+          %thead
+            %tr
+              %th Task Title
+              %th Completion Time
+              %th Completion Reward
+              %th
+          %tbody
+            - @tasks.each do |task|
+              %tr
+                %td= task.title
+                %td= task.practice_time
+                %td= task.reward
+
+
+        .card-header.d-flex.align-items-center
+          %span Assigned Students: 
+          %span  (#{@students.size} total.)
+          = link_to 'Assign Session to Students', new_music_session_student_session_path(@session), class: 'btn btn-outline-secondary ms-auto'
+
+        %table.table
+          %thead
+            %tr
+              %th Student Name
+              %th Completed
+              %th Rating
+              %th
+          %tbody
+            - @students.each do |student|
+              %tr
+                %td= student.forename + student.surname
+                %td= student_completed?(@music_session, student.id)
+
+      .card-footer.d-flex
+        = link_to 'Back', music_sessions_path, class: 'btn btn-link ms-auto'
